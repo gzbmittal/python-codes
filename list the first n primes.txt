@@ -1,0 +1,17 @@
+def listprime(n):
+...     count = 1
+...     ab = 0
+...     plist = []
+...     while(ab<n):
+...         a = 0
+...         for i in range(2,(count//2)+1):
+...             if count%i == 0:
+...                 a = a +1
+...         if a == 0:
+...             plist.append(count)
+...             ab = ab + 1
+...         count = count + 1
+...     return(plist)
+...
+>>> listprime(11)
+[1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
